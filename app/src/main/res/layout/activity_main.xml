@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_without_bg"
+
+                />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="12dp"
+                        android:drawableStart="@drawable/ic_security_black_24dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnTouchID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_fingerprint_black_24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvTouchID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Use Touch ID"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="25dp"
+                android:background="@drawable/roundedbutton"
+                android:padding="10dp"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!--<br.com.simplepass.loading_button_lib.customViews.CircularProgressButton-->
+            <!--android:id="@+id/btn_circle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|center_horizontal"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:drawableEnd="@drawable/ic_next_white_26"-->
+            <!--android:gravity="start|center_vertical"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="NEXT"-->
+            <!--android:textColor="@color/white"-->
+            <!--app:spinning_bar_color="#FFF"-->
+            <!--app:spinning_bar_padding="6dp"-->
+            <!--app:spinning_bar_width="4dp" />-->
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--android:padding="40dp"--><!--tools:context=".MainActivity">-->
+
+
+    <!--<ImageView--><!--android:layout_width="250dp"--><!--android:layout_height="250dp"--><!--android:layout_gravity="center_horizontal"--><!--android:src="@drawable/ic_launcher"--><!--/>-->
+
+    <!----><!--<android.support.design.widget.TextInputLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="30dp"--><!--android:layout_marginStart="100dp"--><!--android:layout_marginEnd="100dp"--><!--&gt;-->
+
+    <!--<EditText--><!--android:id="@+id/etUserName"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:hint="Username"/>-->
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+    <!--<android.support.design.widget.TextInputLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="30dp"--><!--android:layout_marginStart="100dp"--><!--android:layout_marginEnd="100dp"--><!--&gt;-->
+
+    <!--<EditText--><!--android:id="@+id/etPassword"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:hint="Password"--><!--android:layout_marginTop="30dp"--><!--/>-->
+
+    <!--</android.support.design.widget.TextInputLayout>--><!----><!----><!--<Button--><!--android:id="@+id/btnLogin"--><!--android:layout_width="300dp"--><!--android:layout_height="wrap_content"--><!--android:text="Login"--><!--android:layout_marginTop="30dp"--><!--android:layout_marginStart="100dp"--><!--android:layout_marginEnd="100dp"--><!--android:background="@color/colorPrimary"--><!--android:textColor="@color/white"--><!--android:layout_gravity="center_horizontal"--><!--/>-->
+
+    <!--</LinearLayout>-->

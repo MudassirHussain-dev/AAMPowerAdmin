@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/totalBillLay"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/billToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgGrey"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title="Bill"
+                    >
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgGrey"
+                    android:orientation="vertical"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/btnBack"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:src="@drawable/ic_arrow_back_black_24dp" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tvtitle"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toEndOf="@+id/btnBack"-->
+                        <!--android:text="Bill"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="22dp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_marginStart="10dp"-->
+                        <!--android:layout_toStartOf="@+id/btnShare"-->
+                        <!--/>-->
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/btnShare"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:src="@drawable/ic_share_black_24dp"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginEnd="5dp"-->
+                        <!--/>-->
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:animateLayoutChanges="true"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/titleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="Name: "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/titleName"
+                            android:layout_toStartOf="@id/titleCity"
+                            android:textColor="@color/textColorDark" />
+
+                        <TextView
+                            android:id="@+id/titleAccNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBillName"
+                            android:layout_marginTop="5dp"
+                            android:text="Bill No: "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillAccNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBillName"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/titleAccNo"
+                            android:layout_toStartOf="@+id/titlePhone"
+                            android:textColor="@color/textColorDark" />
+
+                        <TextView
+                            android:id="@+id/titleCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/tvBillCity"
+                            android:text="City: "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/textColorDark" />
+
+
+                        <TextView
+                            android:id="@+id/titleAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleAccNo"
+                            android:layout_marginTop="5dp"
+                            android:text="Address: "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillAdd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBillAccNo"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toEndOf="@+id/titleAddress"
+                            android:textColor="@color/textColorDark" />
+
+                        <TextView
+                            android:id="@+id/titlePhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleCity"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toStartOf="@+id/tvBillPhone"
+                            android:text="Phone: "
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/titleCity"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorDark" />
+
+                        <RelativeLayout
+                            android:id="@+id/ledgerHideLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBillAdd">
+
+                            <RelativeLayout
+                                android:id="@+id/fromAndToLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/titleFrom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:text="Dated: "
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvDated"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_toEndOf="@+id/titleFrom"
+                                    android:layout_toStartOf="@id/titleTo"
+                                    android:textColor="@color/textColorDark" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/headerBillLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/fromAndToLayout"
+                                android:orientation="horizontal"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:weightSum="6">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Qty "
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="3"
+                                    android:text="Product Name"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Price"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Amount"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefreshBill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/noRecordLayoutBill"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tvBillNoRecord"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="NO RECORD FOUND"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvBillNoRecordMsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvBillNoRecord"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Nearly one year no record found !!!"
+                            android:textColor="@color/textColorDark"
+                            android:textSize="18dp" />
+
+
+                    </RelativeLayout>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/billList_shimmer_view_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical"
+                        shimmer:duration="800">
+
+                        <!-- Adding 3 rows of placeholders -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="150dp"
+                                android:layout_height="60dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="200dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+
+                            <View
+                                android:layout_width="250dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="150dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="200dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="250dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="250dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                            <View
+                                android:layout_width="200dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+
+                            <View
+                                android:layout_width="300dp"
+                                android:layout_height="60dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/placeholder_bg" />
+
+                        </LinearLayout>
+
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/billRecView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/totalBillLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textColorDark" />
+
+        <TextView
+            android:id="@+id/tvTotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/tvTotalBill"
+            android:gravity="center_vertical"
+            android:text="Total:   "
+            android:textColor="@color/textColorDark"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

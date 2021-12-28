@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UpdateLedgerActivity">
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/updateLedgerToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgGrey"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Update Records">
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_UpdateVoucherLedger"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPDATE VOUCHER"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_updateVoucherNumberVoucherLedgerActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableStart="@drawable/ic_vouchers"
+                android:drawablePadding="10dp"
+                android:drawableTint="#828282"
+                android:focusableInTouchMode="false"
+                android:hint="Voucher"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_updateDescVoucherLedgerActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableStart="@drawable/ic_description_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Description"
+                android:inputType="textCapCharacters"
+                android:lines="3"
+                android:text="CASH RECEIVED" />
+
+            <EditText
+                android:id="@+id/et_updateAmountVoucherLedgerActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edit_text"
+                android:drawableStart="@drawable/ic_payment_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Amount"
+                android:inputType="number"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_UpdateVoucherLedger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

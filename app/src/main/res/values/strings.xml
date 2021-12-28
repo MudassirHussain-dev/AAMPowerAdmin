@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AAMPower Admin</string>
+
+    <string name="internetConnectionError">No Internet Connection</string>
+    <string name="internetConnectionErrorMsg">We\'re sorry, but something went wrong. Don\'t worry. It\'s not your fault. Please check your connection and pull down to refresh.</string>
+
+    <string name="networkConnectionError">Network Problem</string>
+    <string name="networkConnectionErrorMsg">We\'re sorry, but something went wrong. Don\'t worry. It\'s not your fault. Please check your network and pull down to refresh.</string>
+
+    <string name="oopsError">Oops!</string>
+    <string name="oopsErrorMsg">Something went wrong. Please try again after sometime.</string>
+
+
+    <!--Image sized-->
+    <string name="img_width">350</string>
+    <string name="img_height">350</string>
+    <string name="img_quality">70</string>
+
+    <string name="PREF_FILE">PREF_FILE</string>
+    <string name="PREF_FILE_I">PREF_FILE_I</string>
+
+    <string name="citiesLink">https://aampower.app/data/getcity.aspx</string>
+    <string name="citiesCodeLink">https://aampower.app/data/getbl.aspx</string>
+    <string name="loginLLink">https://aampower.app/data/login.aspx</string>
+    <string name="ledgerLink">https://aampower.app/data/one-year-accounts.aspx</string>
+    <string name="billLink">https://aampower.app/data/getbill.aspx</string>
+    <string name="cashReceiveLink">https://aampower.app/data/insvoucher.aspx</string>
+
+    <string name="logoutTaskLink">https://aampower.app/data/logout.aspx</string>
+    <string name="GET_Voucher_ID">https://aampower.app/data/get_max_voucher_id.aspx</string>
+
+
+    <string name="ipLink">https://api.ipify.org/?format=string</string>
+    <string name="Update_Voucher">https://aampower.app/data/update_voucher_ledger.aspx</string>
+    <!--<string name="ipLink">http://checkip.amazonaws.com/</string>-->
+    <!--<string name="ipLink">http://ipv4bot.whatismyipaddress.com</string>-->
+    <!--http://checkip.amazonaws.com/-->
+
+</resources>

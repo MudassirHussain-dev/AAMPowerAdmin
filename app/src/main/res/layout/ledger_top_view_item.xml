@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_toEndOf="@+id/titleName"
+            android:layout_toStartOf="@id/titleCity"
+            />
+
+        <TextView
+            android:id="@+id/titleAccNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account No: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvLedName"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvAccNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_toEndOf="@+id/titleAccNo"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@+id/titlePhone"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/tvLedName"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/titleCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/tvLedCity"
+            />
+
+        <TextView
+            android:id="@+id/tvLedCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_alignParentEnd="true"
+            />
+
+
+        <TextView
+            android:id="@+id/titleAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/titleAccNo"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLedAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_toEndOf="@+id/titleAccNo"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/tvAccNo"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/titlePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/tvLedPhone"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/titleCity"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLedPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/titleCity"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/titleFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvLedAdd"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_below="@+id/tvLedAdd"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/titleFrom"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/tvLedTo"
+            />
+
+        <TextView
+            android:id="@+id/titleTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toStartOf="@+id/tvLedTo"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/titleAddress"
+            android:layout_marginTop="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLedTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorDark"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/titleAddress"
+            android:layout_marginTop="7dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

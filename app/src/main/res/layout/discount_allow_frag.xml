@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCashSubmit"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etDisDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:editable="false"
+            android:hint="Date"
+            android:visibility="gone"
+            android:focusableInTouchMode="false"
+            />
+
+        <EditText
+            android:id="@+id/etDisDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_description_black_24dp"
+            android:lines="3"
+            android:inputType="textCapCharacters"
+            android:hint="Description"
+            android:text="DISCOUNT ALLOWED" />
+
+        <EditText
+            android:id="@+id/etDisAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_payment_black_24dp"
+            android:hint="Discount"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDisSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundedbutton"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/proListRootView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:cardBackgroundColor="@color/bgGrey">-->
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:background="@drawable/city_bg"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_ledger"
+        android:icon="@drawable/ic_ledger"
+        android:title="Ledger"/>
+
+    <item
+        android:id="@+id/action_cheque"
+        android:icon="@drawable/ic_cheque"
+        android:title="Cheque Received"/>
+
+    <item
+        android:id="@+id/action_order"
+        android:icon="@drawable/ic_order"
+        android:title="Order"/>
+
+    <item
+        android:id="@+id/action_discount"
+        android:icon="@drawable/ic_discount"
+        android:title="Discount Allowed"/>
+
+    <item
+        android:id="@+id/action_cash"
+        android:icon="@drawable/ic_cash"
+        android:title="Cash Received"/>
+
+
+</menu>
